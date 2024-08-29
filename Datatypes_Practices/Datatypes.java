@@ -15,8 +15,8 @@ class Datatypes
 		int c=14421424;
 		System.out.println("Int Value is "+c);
 		
-		long d=1421412412;
-		System.out.print("The value of Long is "+d+ "It can be used to store mobile number or population");
+		long d=1421412412342525235l;
+		System.out.print("The value of Long is "+d+ " It can be used to store mobile number or population");
 	
 		
 	

@@ -1,0 +1,17 @@
+Primitive Datatypes
+
+Data types       	Sizes
+
+byte               	 1 byte
+short		 2 bytes	
+int                		 4 bytes
+long            		 8 bytes
+
+char               	 2 bytes
+float                 	 4 bytes
+double          	 8 bytes
+boolean         	 1 bit
+
+
+//Bcoz of this primitive datatypes java is not 100% object oriented programming language.
+//Everything is object in java except this primitive datatypes
