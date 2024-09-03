@@ -15,5 +15,14 @@ class subscribe_project
 		}
 		
 		System.out.println("Subscribed:"+subscribed);
+		
+		if(subscribed)
+		{
+			System.out.println("You Are Subscribed");
+		}
+		else
+		{
+			System.out.println("You Are Not Subscribed");
+		}
 	}
 }
