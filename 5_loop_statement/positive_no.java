@@ -5,13 +5,14 @@ class positive_no
 	{
 		Scanner sc=new Scanner(System.in);	
 		int n=0;
-		int i=0;
+		int count=0;
 		
 		while(n>=0)
 		{
 		 n=sc.nextInt();
-		 i++;	
+		 count++;	
 		}
-		System.out.println("Total Inputs: "+i);
+		count--;
+		System.out.println("Total Inputs: "+count); //+(count-1) can also be written
 	}
 }
