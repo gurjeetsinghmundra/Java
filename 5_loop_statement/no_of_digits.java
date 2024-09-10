@@ -7,6 +7,9 @@ class no_of_digits
 			int n=sc.nextInt();
 			int i=0;
 			int m=n;
+			
+			
+		
 		
 			while(n!=0)
 			{
