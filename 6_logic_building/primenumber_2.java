@@ -7,7 +7,7 @@ class primenumber_2
 			
 			int total=0;
 			
-			for(int n=1;n<=100;n++)
+			for(int n=1;n<=200;n++)
 			{	
 				
 				int count=0;
