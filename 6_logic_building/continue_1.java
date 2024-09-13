@@ -11,7 +11,7 @@ class continue_1
 				System.out.println(i);
 				continue;
 		}
-		
+//
 		int sum=0;
 		for(int i=1;i<=5;i++)
 		{
