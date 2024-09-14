@@ -5,7 +5,7 @@ class practice2
   {
     Scanner sc=new Scanner(System.in);
     int a=sc.nextInt();
-    System.out.println();
+    System.out.println(a);
     System.out.println("Hello World");
   }
 }
