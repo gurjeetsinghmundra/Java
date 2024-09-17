@@ -31,6 +31,9 @@ class array_4
 			}
 			System.out.println(sum);
 			
+			
+System.out.println("=====================================================");
+			
 //-------------------------------------------------------------------
 
 			char ch[]={'a','e','i','a','c','a'};
@@ -48,14 +51,24 @@ System.out.println("=====================================================");
 
 
 			char chr[]={'a','e','t','i'};
+			int vowels=0;
+			int consonants=0;
 			
 			for(char cc:chr)
 			{
 				if(cc=='a' || cc=='e' || cc=='i')
+				{
 					System.out.println("Vowels");
+					vowels++;
+				}
 				else
-					System.out.println("Consonants");	
+				{
+					System.out.println("Consonants");
+					consonants++;
+				}
 			}
+			
+			System.out.println("Vowels count: "+vowels+" , Consonants Count: "+consonants);
 		
 	}
 }
