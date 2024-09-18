@@ -11,6 +11,25 @@ class array_6
 				System.out.println(arr1[i][j]);
 			}
 		}
+		
+System.out.println("=============================================================");	
 
+		//Enhanced For loop (it is only used in array) 
+		
+		for(int n[]:arr1)
+		{
+			for(int i:n)
+			{
+				System.out.println(i);
+			}		
+		}
+		
+System.out.println("=============================================================");		
+		int arr2[][]={{22,54},{23,46,52},{67,34,76,86}};
+
+		for(int m[]:arr2)
+		{
+			System.out.println(m.length);
+		}
 	}
 }

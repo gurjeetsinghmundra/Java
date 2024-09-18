@@ -6,3 +6,11 @@
 //int a=100,int b=200,int c=323,int d=12 (find the largest)
 //We can sort the above using if else but the code will be larger 
 // so to avoid it we use array
+
+
+
+
+
+
+
+//Enchanced for loop(without condition & increment)(it is only used for arrays)
