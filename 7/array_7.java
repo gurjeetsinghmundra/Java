@@ -28,5 +28,17 @@ System.out.println("==========================================================")
 		}
 		
 		System.out.println(total);
+
+System.out.println("==========================================================");			
+		int a[][]={{1,3,5},{3,5,8}};
+		
+		for(int m[]:a)
+		{
+		  System.out.println();
+		  for(int arr:m)
+		  {
+			System.out.print(arr+ " ");
+		  }		
+		}
 	}
 }
