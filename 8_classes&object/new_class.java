@@ -1,0 +1,4 @@
+class new_class
+  {
+
+  }
