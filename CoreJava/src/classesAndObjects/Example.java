@@ -9,6 +9,8 @@ public class Example {
 		
 		Product p2=new Product();
 		p2.setProductDetails(102,"Mobile",20000);
+		
+		System.out.println("You have to Pay: "+p2.discount());
 	}
 
 }

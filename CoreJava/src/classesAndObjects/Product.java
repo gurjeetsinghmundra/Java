@@ -17,5 +17,10 @@ public class Product {
 	System.out.println(this.productId+" "+this.productName+" "+this.productPrice);
 	
 	}
+	
+	double discount()
+	{
+		return this.productPrice*0.8;
+	}
  
 }
