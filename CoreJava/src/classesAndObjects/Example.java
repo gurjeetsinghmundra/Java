@@ -14,7 +14,12 @@ public class Example {
 		
 	*/
 		new Category();
-		new Category();
+		
+		
+		Category c1=new Category(1,"Electronics");
+		System.out.println(c1.categoryId);
+		System.out.println(c1.categoryName);
+		
 	}
 
 }
