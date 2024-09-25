@@ -12,4 +12,10 @@ public class Employee {
 		this.empName=empName;
 	}
 	
+//this keyword is not allowed when using static
+	static void changeCeo(String ceoName)
+	{
+		ceo=ceoName;
+	}
 }
+
