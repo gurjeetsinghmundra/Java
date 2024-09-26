@@ -43,7 +43,7 @@ public class Inheritance_2 {
 		SportStudent sd=new SportStudent(101,"Gurjeet",100,5,"Running");
 		
 		
-	  sd.rollNo;
+	 System.out.println(sd.rollNo);
 	}
 
 		
