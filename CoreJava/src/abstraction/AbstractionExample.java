@@ -47,6 +47,22 @@ public class AbstractionExample {
 		new TV().stop();
 		new AC().stop();
 		
+		Electronics computer=new Electronics()
+		{
+			void start()
+			{
+				System.out.println("New Computer");
+			}
+			
+			void stop()
+			{
+				System.out.println("Old Computer");
+			}
+		};		
+		
+		computer.start();
+		computer.stop();
+		
 	}
 	
 }
