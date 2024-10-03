@@ -16,6 +16,20 @@ public class BankDetailsMain {
 //To call static method we write
 	  //Class_name.Method_name;
 		Bank.staticMethod();
-	
+		
+//Anonymous 
+		
+		Bank axis= new Bank()
+		{
+			public void details()
+			{
+				System.out.println("Axis Bank");
+			}
+			
+		};
+		
+		axis.details();
+		
+
 	}
 }
