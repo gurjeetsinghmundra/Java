@@ -11,9 +11,10 @@ public class Pattern1 {
 		
 			for(int i=1;i<=10;i++)//Inner For Loop denotes the number of rows
 			{
-				System.out.print("*");
+				System.out.print("* ");
 			}
 				System.out.println();
+   
 		}
 	}
 
