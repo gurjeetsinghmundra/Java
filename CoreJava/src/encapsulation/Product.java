@@ -24,10 +24,18 @@ public class Product {
 		this.name = name;
 	}
 	
-	public Product() {
+	public Product() { //this is used to prevent error is no input is given
 		super();
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	public String toString()
+	{
+		return this.id+" "+this.name;
+	}
+	
+	
 	
 	
 	

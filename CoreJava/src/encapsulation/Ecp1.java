@@ -25,6 +25,9 @@ public class Ecp1 {
 		s1.setAge(21);
 		
 		System.out.println(s1.getAge());
+		
+		//
+		System.out.println(s1);
 	}
 	
 	

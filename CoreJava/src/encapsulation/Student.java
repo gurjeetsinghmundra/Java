@@ -40,4 +40,10 @@ public class Student {
 	{
 		return this.age;
 	}
+	
+	//automatic
+	public String toString()
+	{
+		return this.id+" "+this.name+" "+this.age;
+	}
 }
