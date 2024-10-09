@@ -1,4 +1,4 @@
-package Inheritance;
+package inheritance;
 
 public class Details {
 	public static void main(String[] args) {
