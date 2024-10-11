@@ -1,8 +1,17 @@
 package exceptionHandling;
 
-public class InvalidAgeException {
+public class InvalidAgeException extends RuntimeException{
 
-	public static void main(String[] args) {
-		
+	public InvalidAgeException()
+	{
+		super();
 	}
+	
+	public InvalidAgeException(String message)
+	{
+		super(message);
+		//super("Invalid");	
+	}
+	
+	
 }
