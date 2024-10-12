@@ -12,5 +12,5 @@ public class NegativeNumberException extends Exception{ //Exception for CompileT
 	{
 		super(message);	
 	}
-	//example
+	//ex
 }
