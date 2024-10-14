@@ -18,7 +18,7 @@ public class Student {
 		if (password.equals("U@1"))
 		return this.id;
 		else
-		return 0; //methods want integar
+		return 0; //methods want integer
 	}
 	
 	public void setName(String name)
@@ -46,4 +46,5 @@ public class Student {
 	{
 		return this.id+" "+this.name+" "+this.age;
 	}
+	
 }
