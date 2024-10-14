@@ -15,12 +15,17 @@ public class Example3 {
 			@Override
 			public boolean test(Student t) {
 				// TODO Auto-generated method stub
-				return t.getAge()>18;
+				return t.getAge()>=18;
 			}
 			
 		};
 		
 		
+		Student student=new Student(101,"Gurjeet",2);
+		
+		boolean ans=checkAge.test(student);
+		
+		System.out.println(ans);
 	}
 
 }
