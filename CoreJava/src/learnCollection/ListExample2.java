@@ -12,7 +12,7 @@ public class ListExample2 {
 		list.add(10);//1
 		list.add(16);//2
 		list.add(9);//3
-		
+		//
 		System.out.println(list);
 		
 		for(Integer i:list)
