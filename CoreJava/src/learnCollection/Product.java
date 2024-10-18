@@ -1,7 +1,11 @@
 package learnCollection;
 
-public class Product implements Comparable<Product> {
+import java.util.Comparator;
+
+//public class Product implements Comparable<Product> {
 // Comparable is used to provide logic of how to compare variable(only 1 logic)
+
+public class Product implements Comparator<Product> {
 	private int id;
 	private String name;
 	private int price;
@@ -45,6 +49,13 @@ public class Product implements Comparable<Product> {
 		return "Product [id=" + id + ", name=" + name + ", price=" + price + "]";
 	}
 	@Override
+	public int compare(Product o1, Product o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	/*
+	@Override
 	public int compareTo(Product o) {
 		// TODO Auto-generated method stub
 		//return this.id-o.id;
@@ -56,6 +67,7 @@ public class Product implements Comparable<Product> {
 		return this.name.compareTo(o.name);
 	
 	}
+	*/
 	
 	
 	
