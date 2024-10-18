@@ -1,7 +1,7 @@
 package learnCollection;
 
-public class Product {
-
+public class Product implements Comparable<Product> {
+// Comparable is used to provide logic of how to compare variable(only 1 logic)
 	private int id;
 	private String name;
 	private int price;
@@ -43,6 +43,18 @@ public class Product {
 	@Override
 	public String toString() {
 		return "Product [id=" + id + ", name=" + name + ", price=" + price + "]";
+	}
+	@Override
+	public int compareTo(Product o) {
+		// TODO Auto-generated method stub
+		//return this.id-o.id;
+		
+		//return this.price-o.price;
+		
+		//return o.price-this.price;
+
+		return this.name.compareTo(o.name);
+	
 	}
 	
 	
