@@ -23,7 +23,7 @@ public class Example5 {
 	System.out.println(ans);
 	System.out.println(ans2);
 	
-	
+//	
 	
 }
 }
