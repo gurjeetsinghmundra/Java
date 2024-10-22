@@ -1,5 +1,6 @@
 package learnCollection_2;
 
+//hashset will shuffle the data and will add them randomly
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
