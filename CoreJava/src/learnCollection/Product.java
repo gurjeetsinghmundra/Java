@@ -70,7 +70,4 @@ public class Product implements Comparator<Product> {
 	}
 	*/
 	
-	
-	
-	
 }
