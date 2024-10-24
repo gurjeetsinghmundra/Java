@@ -10,7 +10,7 @@ public class MapExample3 {
 
 	public static void main(String[] args) {
 		
-		TreeMap<Integer, Product>  products=new TreeMap<Integer, Product>();
+		TreeMap<Integer, Product>  products=new TreeMap<Integer, Product>((i1,i2)->i2-i1);
 		
 		products.put(101,new Product(101,"Laptop",50000));
 		products.put(102,new Product(102,"Mobile",35000));
@@ -20,5 +20,7 @@ public class MapExample3 {
 		
 		Product laptop=products.get(101);
 		System.out.println(laptop.getPrice());
+		
+		
 	}
 }
