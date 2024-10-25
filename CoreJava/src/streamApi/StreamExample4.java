@@ -14,7 +14,7 @@ public class StreamExample4 {
 		Stream<Integer> even= list.stream().filter(n->n%2==0);
 		
 		even.forEach((n)->System.out.println(n));
-	
+	//
 	}
 
 }
