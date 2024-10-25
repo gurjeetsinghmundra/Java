@@ -2,7 +2,6 @@ package streamApi;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class StreamExample2 {
 
@@ -18,5 +17,8 @@ public class StreamExample2 {
 			}
 			System.out.println("--------------------------------------");
 		});
+		
+		
+		names.stream().forEach((i)->System.out.println(i.charAt(0)+","+i.charAt(i.length()-1)));
 	}
 }
