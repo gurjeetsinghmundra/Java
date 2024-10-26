@@ -15,6 +15,7 @@ public class StreamExample4 {
 		
 		even.forEach((n)->System.out.println(n));
 	//
+		//
 	}
 
 }
