@@ -19,6 +19,8 @@ public class StreamExample1 {
 		
 		System.out.println(list);
 		
+		//Stream is just a copy of list
+		
 		System.out.println("------------------------------------------");
 		
 		//Object of Stream
