@@ -33,6 +33,10 @@ public class StreamExample10 {
 		
 		System.out.println("---------------------------------------");
 		
+		//anyMatch (atleast one element of given condition should be there)
+		//allMatch(all elements should be there);
+		//noneMatch(no elements of given condition should be there)
+		
 		boolean evenMatch = list.stream().anyMatch(n->n%2==0);
 		System.out.println(evenMatch);
 		
@@ -41,7 +45,22 @@ public class StreamExample10 {
 		boolean bigMatch = list.stream().anyMatch(n->n>1000);
 		System.out.println(bigMatch);
 		
+		System.out.println("---------------------------------------");
 
+		boolean evenMatch2 = list.stream().allMatch(n->n%2==0);
+		System.out.println(evenMatch2);
+		
+		System.out.println("---------------------------------------");
+		
+		boolean lessMatch = list.stream().allMatch(n->n<=100);
+		System.out.println(lessMatch);
+		
+		System.out.println("---------------------------------------");
+
+		boolean noneMatch = list.stream().noneMatch(n->n>100);
+		System.out.println(noneMatch);
+		
+		
 	}
 
 }
