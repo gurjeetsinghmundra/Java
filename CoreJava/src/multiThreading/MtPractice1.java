@@ -29,7 +29,7 @@ class P2 extends Thread
 }
 
 //
-//
+
 
 public class MtPractice1 {
 
