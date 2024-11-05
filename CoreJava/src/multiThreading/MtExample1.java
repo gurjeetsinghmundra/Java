@@ -8,6 +8,8 @@ package multiThreading;
 //T1 is taking 10seconds and T2 is taking 5 but the work will be done in 10 seconds(not 15)
 //bcoz multithreading does all work together
 
+//Multithreading is used for developed games
+
 
 class T1 extends Thread
 {	
