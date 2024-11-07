@@ -1,5 +1,6 @@
 package com.learn.springcore.component;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,32 @@ public class Product {
 	@Value("40000")
 	private int price;
 	
+ //	@Autowired
+	private Category category;
+	
+	public Product(int id, String name, int price, Category category) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.category = category;
+	}
+	public Category getCategory() {
+		return category;
+	}
+	
+	// @Autowired
+	public void setCategory(Category category) {
+		System.out.println("Setter method");
+		this.category = category;
+	}
+	
+	@Autowired
+	public Product(Category category) {
+		super();
+		System.out.println("Constructor");
+		this.category = category;
+	}
 	public int getId() {
 		return id;
 	}
@@ -33,7 +60,7 @@ public class Product {
 	
 	@Override
 	public String toString() {
-		return "Product [id=" + id + ", name=" + name + ", price=" + price + "]";
+		return "Product [id=" + id + ", name=" + name + ", price=" + price + ", category=" + category + "]";
 	}
 	
 	
