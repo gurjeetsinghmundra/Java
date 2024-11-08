@@ -11,12 +11,14 @@ public class Main {
 		ApplicationContext context= //Ioc container ke class
 		new AnnotationConfigApplicationContext(BeanConfig.class);
 		
-		School sh1=context.getBean("sh1",School.class);
-		System.out.println(sh1);
-		
+	
 		Student s1=context.getBean("s1",Student.class);
 		System.out.println(s1);
 		
+		School sh1=context.getBean("sh1"/*bean name same as method name*/,School.class);
+		System.out.println(sh1);
 		
+		School sh2=context.getBean("sh2",School.class);
+		System.out.println(sh2);
 	}
 }

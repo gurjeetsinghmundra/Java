@@ -1,9 +1,14 @@
 package com.learn.springcore.bean;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
 public class Student {
 	
 	private int id;
 	private String name;
+	@Autowired  //connect karega
+	@Qualifier("sh2")  //if multiples bean are there so we need to specific which need to be qualified
 	private School school;
 	
 	public int getId() {
