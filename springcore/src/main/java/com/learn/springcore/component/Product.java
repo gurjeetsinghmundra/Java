@@ -13,7 +13,6 @@ public class Product {
 	@Value("40000")
 	private int price;
 	//
-	//
  //	@Autowired
 	private Category category;
 	
