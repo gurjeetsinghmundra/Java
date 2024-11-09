@@ -12,7 +12,7 @@ public class Product {
 	private String name;
 	@Value("40000")
 	private int price;
-	
+	//
  //	@Autowired
 	private Category category;
 	
