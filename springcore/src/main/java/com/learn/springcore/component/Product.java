@@ -26,7 +26,7 @@ public class Product {
 	public Category getCategory() {
 		return category;
 	}
-	
+	//
 	// @Autowired
 	public void setCategory(Category category) {
 		System.out.println("Setter method");
