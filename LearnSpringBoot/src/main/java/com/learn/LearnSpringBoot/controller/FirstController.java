@@ -3,6 +3,8 @@ package com.learn.LearnSpringBoot.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.learn.LearnSpringBoot.entity.Student;
+
 // we have 2 annotations
 // @controller @RestController
 // Their work is to make controllers
@@ -25,5 +27,25 @@ public class FirstController {
 		return "Gurjeet";
 	}
 	
+	
+	@GetMapping("/studentDetails") //output will be in Json form
+	public Student getStudent()
+	{
+		Student s=new Student();
+		s.setId(101);
+		s.setName("Gurjeet");
+		s.setMarks(75);
+		
+		return s;
+	}
+	
 
+	@GetMapping("/result")
+	public Student getMarks()
+	{
+		Student s=new Student();
+		s.setMarks(92);
+		
+		return s;
+	}
 }
