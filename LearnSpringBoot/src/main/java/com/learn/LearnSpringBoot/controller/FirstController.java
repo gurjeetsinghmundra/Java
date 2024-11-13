@@ -1,6 +1,12 @@
 package com.learn.LearnSpringBoot.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.learn.LearnSpringBoot.entity.Student;
@@ -13,6 +19,8 @@ import com.learn.LearnSpringBoot.entity.Student;
 
 @RestController
 public class FirstController {
+	
+	//Get (For Reading Data)
 	
 	@GetMapping("/hello") // put this /hello link in postman to get output
 	public String hello()
@@ -48,4 +56,35 @@ public class FirstController {
 		
 		return s;
 	}
+	
+	@GetMapping("/all-students")
+	public List<Student> allStudents()
+	{
+		ArrayList<Student> students = new ArrayList<Student>();
+		
+		students.add(new Student(101,"Gurjeet",90));
+		students.add(new Student(102,"Amit",95));
+		
+		return students;
+	}
+	
+	//for multiple id
+	
+	@GetMapping("/students/{id}") //PathVariable (can put any id in link)/students/1 ,/students/2
+	public String learnPathVariable(@PathVariable int id) //Java Variable
+	{
+		System.out.println(id);
+		return "Data Fetched Successfully!";
+	}
+	
+	//Post (To Upload Data)
+	
+	@PostMapping("/students")
+	public Student addStudent(@RequestBody Student student)
+	{
+		System.out.println(student);
+		return student;
+	}
+	
+	
 }
