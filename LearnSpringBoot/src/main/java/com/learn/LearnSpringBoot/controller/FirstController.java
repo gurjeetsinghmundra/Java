@@ -17,7 +17,7 @@ import com.learn.LearnSpringBoot.entity.Student;
 // @controller @RestController
 // Their work is to make controllers
 //apply on class to make it controller
-
+//
 
 @RestController
 public class FirstController {
