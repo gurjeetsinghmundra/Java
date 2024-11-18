@@ -3,6 +3,7 @@ package com.learn.Ecommerce.service;
 import java.util.List;
 
 import com.learn.Ecommerce.Dto.UserDto;
+import com.learn.Ecommerce.entity.User;
 
 public interface UserService {
 	
@@ -22,5 +23,15 @@ public interface UserService {
 	String deleteUser(String id);
 	//String returntype is used because the method will return  void
 	//and instead of void we can display mssg "id deleted successfully"
+	
+//===================================================================
+	
+	//Entity to Dto Conversion
+	UserDto entityToDto(User user);
+	
+	//Dto to Entity Conversion
+	User dtoToEntity(UserDto userDto);
+	
+	
 	
 }
