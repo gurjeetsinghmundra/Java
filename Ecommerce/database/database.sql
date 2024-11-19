@@ -5,3 +5,5 @@ DESC product;
 
 DESC user;
 
+SELECT * FROM user;
+
