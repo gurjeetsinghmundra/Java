@@ -4,11 +4,13 @@ import java.util.List;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.learn.Ecommerce.Dto.UserDto;
 import com.learn.Ecommerce.entity.User;
 import com.learn.Ecommerce.repository.UserRepository;
 
+@Service  //to make class bin and apply business logic
 public class UserServiceImpl implements UserService{
 
 	@Autowired

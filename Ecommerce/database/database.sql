@@ -4,3 +4,4 @@ SHOW TABLES;
 DESC product;
 
 DESC user;
+
