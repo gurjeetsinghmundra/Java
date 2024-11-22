@@ -1,7 +1,9 @@
 package com.learn.Ecommerce.service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,12 +41,18 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public List<UserDto> getAllUsers() {
 		// TODO Auto-generated method stub
-		return null;
+		List<User> listOfUsers = userRepository.findAll();
+		
+		
+		List<UserDto> userDtoList = listOfUsers.stream()
+				.map(u->entityToDto(u))
+				.collect(Collectors.toList());
+		
+		return userDtoList;
 	}
 
 	@Override
 	public UserDto getUserById(String id) {
-		// TODO Auto-generated method stub
 	
 		User user= userRepository.findById(id).
 		orElseThrow(()->new RuntimeException(id+" not found"));
@@ -60,9 +68,15 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public String deleteUser(String id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+//we write lambda for functional interface only, hence orElseThrow is a functional interface
+			
+		User user = userRepository.
+		findById(id).orElseThrow(()->new RuntimeException(id+" not found"));
+			 
+		userRepository.delete(user);
+			 
+		return user.getId()+" Deleted Successfully!";
+	}	
 
 	@Override
 	public UserDto entityToDto(User user) {
