@@ -55,14 +55,24 @@ public class UserServiceImpl implements UserService{
 	public UserDto getUserById(String id) {
 	
 		User user= userRepository.findById(id).
-		orElseThrow(()->new RuntimeException(id+" not found"));
+		orElseThrow(()->new RuntimeException(id+" not found")); //if id is invalid
 		
 		return entityToDto(user);
 	}
 
 	@Override
 	public UserDto updateUser(String id, UserDto userDto) {
-		// TODO Auto-generated method stub
+
+		User user = userRepository.findById(id).
+		orElseThrow(()->new RuntimeException
+		(id+" not found")); 
+		
+		user.setFirstName(userDto.getFirstName());
+		user.setLastName(userDto.getLastName());
+		user.setEmailId(userDto.getEmailId());
+		user.setAge(userDto.getAge());
+		user.setPassword(userDto.getPassword());
+		
 		return null;
 	}
 
