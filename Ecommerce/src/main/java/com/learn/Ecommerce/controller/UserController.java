@@ -1,7 +1,6 @@
 package com.learn.Ecommerce.controller;
 
-
-//learn streams,optional(findfirst)
+//learn streams,optional(findfirst) homework
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +11,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,6 +29,7 @@ public class UserController {
 	
 //	Post ["/users"] To add user
 	@PostMapping
+	//ResponseEntity is used to set status code	
 	public ResponseEntity<UserDto> addUser(@RequestBody UserDto userDto)
 	{
 		UserDto savedUser = userService.addUser(userDto);
@@ -73,6 +74,19 @@ public class UserController {
 		
 	}
 	
+//PUT	
 	
+//@requestbody is used to read data from postman(through dto) and store it in a variable
+//same is done by path variable 
+	@PutMapping("/{id}")
+	public ResponseEntity<UserDto> updateUserById(@PathVariable String id,
+			@RequestBody UserDto  userDto )
+		//reads↑ , from userdto↑ , variable↑
+	{
+		UserDto updateUser = userService.updateUser(id, userDto);
+		
+		return new ResponseEntity<UserDto>(updateUser,HttpStatus.OK);
+				  //datatype ↑	
+	}
 	
 }

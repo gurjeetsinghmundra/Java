@@ -73,7 +73,10 @@ public class UserServiceImpl implements UserService{
 		user.setAge(userDto.getAge());
 		user.setPassword(userDto.getPassword());
 		
-		return null;
+ //to make changes in database (if this step is skipped no changes will happen in database)
+		User updateUser = userRepository.save(user); 
+		
+		return entityToDto(updateUser);
 	}
 
 	@Override
