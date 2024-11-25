@@ -19,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.learn.Ecommerce.Dto.UserDto;
 import com.learn.Ecommerce.service.UserService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/users")
 public class UserController {
@@ -30,8 +32,8 @@ public class UserController {
 //	Post ["/users"] To add user
 	@PostMapping
 	//ResponseEntity is used to set status code	
-	public ResponseEntity<UserDto> addUser(@RequestBody UserDto userDto)
-	{
+	public ResponseEntity<UserDto> addUser(@RequestBody @Valid UserDto userDto)
+	{												   //without valid validation will not work
 		UserDto savedUser = userService.addUser(userDto);
 		
 		return new ResponseEntity<UserDto>(savedUser,HttpStatus.CREATED);
