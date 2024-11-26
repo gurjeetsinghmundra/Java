@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 
 public class Product {
 	
-	@Id               //will Apply primary key on the column
+	@Id               //will Apply primary key to the column
 	private int productId;
 	@Column(nullable = false) 		  //used to provide extra info about column
 	private String productName;
