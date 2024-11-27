@@ -11,7 +11,7 @@ import jakarta.validation.Payload;
 
 //to make interface annotation we add @
 @Documented   //it is for registration purpose (it is added in jvm library)
-@Target(ElementType.TYPE)
+@Target(ElementType.TYPE)  
 @Retention(RetentionPolicy.RUNTIME) //(for runtime)
 @Constraint(validatedBy = PasswordValidator.class)    //this means rule
 public @interface PasswordMatch {

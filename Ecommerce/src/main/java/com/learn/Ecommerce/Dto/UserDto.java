@@ -1,5 +1,7 @@
 package com.learn.Ecommerce.Dto;
 
+import com.learn.Ecommerce.validators.PasswordMatch;
+
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -19,10 +21,11 @@ import lombok.NoArgsConstructor;
 
 //DTO stands for DATA TRANSFER OBJECTS
 
-//size and not blank annotations can be appiled on strings (not on integers)
+//size and not blank annotations can be applied on strings (not on integers)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@PasswordMatch //class level annotation created by us
 public class UserDto {
 
 	
