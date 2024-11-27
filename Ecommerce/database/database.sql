@@ -3,7 +3,9 @@ Use ecommerce;
 SHOW TABLES;
 DESC product;
 
-DESC user;
+DESC USER;
 
 SELECT * FROM user;
+DESC category;
 
+SELECT * FROM product;

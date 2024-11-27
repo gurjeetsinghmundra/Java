@@ -1,5 +1,9 @@
 package com.learn.Ecommerce.entity;
 
+
+// Product is Singular
+// Products is Plural
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
