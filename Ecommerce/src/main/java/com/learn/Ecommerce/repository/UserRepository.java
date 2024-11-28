@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.learn.Ecommerce.entity.User;
 
-//Repository is for database
+//Repository is for database								//id
 public interface UserRepository extends JpaRepository<User, String> {
 	
 	

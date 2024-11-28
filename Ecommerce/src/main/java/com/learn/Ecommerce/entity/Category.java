@@ -1,5 +1,9 @@
 package com.learn.Ecommerce.entity;
 
+//Category is Singular
+//Categories is Plural (in postman use this)
+
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

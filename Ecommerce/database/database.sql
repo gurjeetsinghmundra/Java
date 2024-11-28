@@ -1,11 +1,15 @@
 CREATE DATABASE ecommerce;
 Use ecommerce;
+
 SHOW TABLES;
-DESC product;
 
-DESC USER;
-
+DESC user;
 SELECT * FROM user;
-DESC category;
 
+DESC product;
 SELECT * FROM product;
+
+DESC category;
+SELECT * FROM category;
+
+

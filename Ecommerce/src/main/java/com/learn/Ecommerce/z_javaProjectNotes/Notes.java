@@ -9,3 +9,15 @@
 //regex101
 //community patterns
 //strict password validator
+
+//======================================================================
+
+
+/*
+ * GET POST /products
+ * 
+ * GET /products/{id}
+ *
+ *PUT
+ *DELETE
+ */
