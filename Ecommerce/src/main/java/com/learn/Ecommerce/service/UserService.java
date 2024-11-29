@@ -37,4 +37,6 @@ public interface UserService {
 	
 	UserDto getUserByEmailId(String email);
 	
+	List<UserDto> getUserByFirstName(String firstName);
+	
 }

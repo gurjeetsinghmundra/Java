@@ -15,6 +15,8 @@ import com.learn.Ecommerce.repository.UserRepository;
 @Service  //to make class bin and apply business logic
 public class UserServiceImpl implements UserService{
 
+	//add unimplemented methods by clicking on error
+	
 	@Autowired
 	UserRepository userRepository;
 	@Override
@@ -134,6 +136,19 @@ public class UserServiceImpl implements UserService{
 				
 	return entityToDto(user);
 		
+	}
+
+	@Override
+	public List<UserDto> getUserByFirstName(String firstName) {
+		
+	//List<User> listOfUsers = userRepository.findByFirstName(firstName);
+		
+		
+		List<UserDto> userDtoList = userRepository.findByFirstName(firstName).stream()
+				.map(u->entityToDto(u)) //function
+				.collect(Collectors.toList());
+		
+		return userDtoList;
 	}
 	
 	
