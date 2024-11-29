@@ -119,6 +119,21 @@ public class UserServiceImpl implements UserService{
 		user.setAge(userDto.getAge());
 		
 		return user;
+		
+		
+//-----------------------------------------------------------------------------
+	
+	
+	}
+
+	@Override
+	public UserDto getUserByEmailId(String email) {
+
+	User user= userRepository.findByEmailId(email).
+	orElseThrow(()->new RuntimeException(email+" not found")); //if email is invalid
+				
+	return entityToDto(user);
+		
 	}
 	
 	

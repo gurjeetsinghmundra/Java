@@ -1,6 +1,7 @@
 package com.learn.Ecommerce.service;
 
 import java.util.List;
+//import java.util.Optional;
 
 import com.learn.Ecommerce.Dto.UserDto;
 import com.learn.Ecommerce.entity.User;
@@ -32,6 +33,8 @@ public interface UserService {
 	//Dto to Entity Conversion
 	User dtoToEntity(UserDto userDto);
 	
+//===================================================================
 	
+	UserDto getUserByEmailId(String email);
 	
 }

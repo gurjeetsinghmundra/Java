@@ -11,9 +11,9 @@ import com.learn.Ecommerce.entity.User;
 public interface UserRepository extends JpaRepository<User, String> {
 	
 	
-	Optional<User> findByEmailId(String email);
+	Optional<User> findByEmailId(String email);  //Optional:-emailId is unique(it will return only one unique value)
 	
-	List<User> findByFirstName(String firstName);
+	List<User> findByFirstName(String firstName);//List:-list will return multiple values
 	
 	List<User> findByLastName(String lastName);
 	

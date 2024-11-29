@@ -46,7 +46,7 @@ public class UserController {
 	
 	@GetMapping("/{id}")//this is path variable
 	//parameter kaa naam aur pathvariable kaa naam same hona chahiye
-	//pathvariable to fetch data
+	//pathvariable to fetch data (which is in search in postman)
 	public ResponseEntity<UserDto> getUserById(@PathVariable String id)//parameter
 	{
 		UserDto userDto = userService.getUserById(id);
@@ -90,5 +90,26 @@ public class UserController {
 		return new ResponseEntity<UserDto>(updateUser,HttpStatus.OK);
 				  //datatype ↑	
 	}
+	
+	
+// -----------------------------------------------------------------------------------------	
+	
+	// /users/find-by-email/singhgurjeet101003@gmail.com
+	
+	// usually links are like this : find-by-email
+	
+	// to avoid conflict or confusion between id and emailid we use find-by-email/{emailId}
+	//agar normal emailid likhege toh postman confuse hoyega id hai yaa email id
+	//isliye find-by-email use karo
+	
+	@GetMapping("find-by-email/{emailId}")
+	public ResponseEntity<UserDto>  getUserByEmailId(@PathVariable String emailId)
+	{
+		//UserDto userDto = userService.getUserByEmailId(emailId);
+		return new ResponseEntity<UserDto>(userService.
+			getUserByEmailId(emailId),HttpStatus.FOUND);
+
+	}
+	
 	
 }
