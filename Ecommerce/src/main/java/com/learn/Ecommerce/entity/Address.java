@@ -18,7 +18,7 @@ public class Address {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)  //This has came from hibrenate
-	//address_seq
+	//will create address_seq table 
 	private int addressId;
 	@Column(nullable = false)
 	private String addressLine1;
