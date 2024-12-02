@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Divisible {
 	
+	//jiske last me 5 hai woh count hone chahiye
+	
 	public static void main(String[] args) {
 		
 		ArrayList<Integer> arr= new ArrayList<Integer>();
