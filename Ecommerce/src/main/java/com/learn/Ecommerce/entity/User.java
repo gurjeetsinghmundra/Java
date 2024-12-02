@@ -1,5 +1,6 @@
 package com.learn.Ecommerce.entity;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -28,6 +29,6 @@ public class User {
 	private int age;
 	
 	//foreign key
-	@OneToOne(cascade = )
+	@OneToOne(cascade = CascadeType.ALL) //dono taraf changes
 	private Address address;
 }

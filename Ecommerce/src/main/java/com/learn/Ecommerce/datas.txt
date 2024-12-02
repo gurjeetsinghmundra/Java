@@ -1,0 +1,8 @@
+# Address
+{
+    "addressLine1": "R No. 101, Chirag Nagar",
+    "addressLine2": "Pheonix Mall, Kurla",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "pincode": 400070
+}

@@ -103,6 +103,8 @@ public class UserServiceImpl implements UserService{
 		userDto.setEmailId(user.getEmailId());
 		userDto.setPassword(user.getPassword());
 		userDto.setAge(user.getAge());
+		
+		userDto.setAddress(user.getAddress());
 		// TODO Auto-generated method stub
 		return userDto;
 	}
@@ -120,6 +122,7 @@ public class UserServiceImpl implements UserService{
 		user.setPassword(userDto.getPassword());
 		user.setAge(userDto.getAge());
 		
+		user.setAddress(userDto.getAddress());
 		return user;
 		
 		
