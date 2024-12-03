@@ -16,6 +16,6 @@ DESC address;
 DESC address_seq;
 
 SELECT * FROM address;
-SELECT * FROM address_seq;
+
 
 

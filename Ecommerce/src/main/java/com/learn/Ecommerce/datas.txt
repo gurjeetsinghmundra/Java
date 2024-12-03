@@ -1,8 +1,34 @@
 # Address
 {
-    "addressLine1": "R No. 101, Chirag Nagar",
+    "addressLine1": "R No. , Chirag Nagar",
     "addressLine2": "Pheonix Mall, Kurla",
     "city": "Mumbai",
     "state": "Maharashtra",
     "pincode": 400070
 }
+
+#User with Address
+ {
+        "firstName": "Faizan",
+        "lastName": "Sheikh",
+        "emailId": "faizan@gmail.com",
+        "password": "User@1234",
+        "confirmPassword": "User@1234",
+        "age": 21,
+        "address":
+        {   "addressLine1": "Street No.1, Narayan Nagar",
+            "addressLine2": "Rcity Mall, Ghatkopar",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "pincode": 400080
+        }
+    }
+
+#Category
+ {
+        "categoryName":"Electronics",
+        "categoryDesc":"All Electronics Items"
+}
+
+
+

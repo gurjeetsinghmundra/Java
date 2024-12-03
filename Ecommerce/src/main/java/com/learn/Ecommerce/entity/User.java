@@ -1,5 +1,7 @@
 package com.learn.Ecommerce.entity;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -28,6 +30,8 @@ public class User {
 	@Column(nullable = false)
 	private int age;
 	
+	//managed matlab kaha pe chahiye
+	@JsonManagedReference //user me address aur address me user nhi dikhna chahiye (in postman output)
 	//foreign key
 	@OneToOne(cascade = CascadeType.ALL) //dono taraf changes
 	private Address address;

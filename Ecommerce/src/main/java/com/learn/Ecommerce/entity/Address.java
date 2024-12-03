@@ -1,5 +1,8 @@
 package com.learn.Ecommerce.entity;
 
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -33,6 +36,8 @@ public class Address {
 	@Column(nullable = false)
 	private int pincode;
 	
+	@JsonBackReference  //to avoid circular path in postman
+	//user me address aur address me user nhi dikhna chahiye (in postman output)
 	@OneToOne(cascade = CascadeType.ALL,mappedBy = "address")
 	//mappedBy se address table me user id nhi banega 
 	private User user;
