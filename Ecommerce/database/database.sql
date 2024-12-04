@@ -17,5 +17,8 @@ DESC address_seq;
 
 SELECT * FROM address;
 
+DESC order_details;
+DESC order_details_products;
 
+SELECT * FROM order_details;
 
