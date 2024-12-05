@@ -1,5 +1,5 @@
 CREATE DATABASE ecommerce;
-Use ecommerce;
+USE ecommerce;
 
 SHOW TABLES;
 
@@ -21,4 +21,5 @@ DESC order_details;
 DESC order_details_products;
 
 SELECT * FROM order_details;
+SELECT * FROM order_details_products; -- third table for many to many relation
 
