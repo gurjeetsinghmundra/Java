@@ -12,6 +12,7 @@ SELECT * FROM product;
 DESC category;
 SELECT * FROM category;
 
+
 DESC address;
 DESC address_seq;
 

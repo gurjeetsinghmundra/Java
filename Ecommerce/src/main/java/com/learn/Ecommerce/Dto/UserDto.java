@@ -46,12 +46,12 @@ public class UserDto {
 	private String lastName;
 	@NotNull
 	@NotBlank (message = "email id cannot be blank") 
-	//the pattern code is copied from regex website (it is for email format : guru@gmail.com)
+	//the pattern code is copied from regex101 website (it is for email format : guru@gmail.com)
 	@Pattern(regexp = "^((?!\\.)[\\w\\-_.]*[^.])(@\\w+)(\\.\\w+(\\.\\w+)?[^.\\W])$")
 	private String emailId;
 	@NotNull
 	@NotBlank (message = "password cannot be blank")
-	//the pattern code is copied from regex website for passwords
+	//the pattern code is copied from regex101(community patterns) website for passwords
 	@Pattern (regexp = "^(?=.*\\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\\w\\d\\s:])([^\\s]){8,16}$")
 	private String password;
 	@NotNull   //cant be null

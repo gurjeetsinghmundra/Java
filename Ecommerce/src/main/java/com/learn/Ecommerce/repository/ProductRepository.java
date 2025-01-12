@@ -4,15 +4,17 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.learn.Ecommerce.entity.Product;
 import com.learn.Ecommerce.projection.ProductProjection;
 
 
-@RepositoryRestResource(excerptProjection = ProductProjection.class ) //projection banaya hai woh batane ke liye
+//@RepositoryRestResource(excerptProjection = ProductProjection.class ) //projection banaya hai woh batane ke liye
 
 
 //Repository is for database									  //id
+@CrossOrigin  //for using Api(CrossOrigin Enable it)
 public interface ProductRepository extends JpaRepository<Product, Integer>{
 	
 	//JPA Query Methods
@@ -20,7 +22,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 	// products/search in postman to get all links
 	// /search/findByProductPriceLessThanEqual?price=50000
 	
-	//mutiple products matlab list of products
+	//multiple products matlab list of products
 	
 	List<Product> findByProductPriceLessThan(int price);
 	
