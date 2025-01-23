@@ -3,11 +3,11 @@ package com.learn.Ecommerce.repository;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+//import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 import com.learn.Ecommerce.entity.Product;
-import com.learn.Ecommerce.projection.ProductProjection;
+//import com.learn.Ecommerce.projection.ProductProjection;
 
 
 //@RepositoryRestResource(excerptProjection = ProductProjection.class ) //projection banaya hai woh batane ke liye
@@ -35,6 +35,21 @@ public interface ProductRepository extends JpaRepository<Product, Integer>{
 	// search/findByProductPriceBetween?startPrice=40000&endPrice=80000
 	
 	List<Product> findByProductPriceBetween(int startPrice,int endPrice); //between ke liye 2
+	
+	
+	//Visual Studio Part
+	//Low to High	
+	List<Product> findByOrderByProductPriceAsc();
+	
+	//High to low
+	List<Product> findByOrderByProductPriceDesc();
+	
+	//	A-z
+	List<Product> findByOrderByProductNameAsc();
+	
+	//
+	List<Product> findByOrderByProductNameDesc();
+
 	
 }
 
