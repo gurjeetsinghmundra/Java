@@ -9,6 +9,8 @@ SELECT * FROM user;
 DESC product;
 SELECT * FROM product;
 
+DELETE FROM product WHERE product_id="8989";
+
 DESC category;
 SELECT * FROM category;
 

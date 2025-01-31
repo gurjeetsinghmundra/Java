@@ -28,6 +28,7 @@ import org.springframework.util.StreamUtils;
 
 // To make controllers
 @RestController
+@CrossOrigin
 public class ProductController {
 
 	@Value("${product.image.path}") // Spring expression language (spel)
